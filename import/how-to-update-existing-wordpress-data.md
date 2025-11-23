@@ -12,7 +12,7 @@ Provide your import file, choose the required post type, then configure WP All I
 - [Step 3: Fill In Data to Update in the Import Template](#step-3-fill-in-data-to-update-in-the-import-template)
 - [Step 4: Specify Important Import Settings](#step-4-specify-important-import-settings)
 
-## How Updating WordPress Data Works
+## Update WordPress Data – How It Works
 
 WP All Import can import data to posts that already exist on your site, even if they were manually created instead of imported by our plugin.
 

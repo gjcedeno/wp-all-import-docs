@@ -6,18 +6,13 @@ Provide your import file, choose the required post type, then configure WP All I
 
 ## Table of Contents
 
-How Updating WordPress Data Works
+- [How Updating WordPress Data Works](#how-updating-wordpress-data-works)
+- [Step 1: Understanding the Import Data](#step-1-understanding-the-import-data)
+- [Step 2: Set Up the Import](#step-2-set-up-the-import)
+- [Step 3: Fill In Data to Update in the Import Template](#step-3-fill-in-data-to-update-in-the-import-template)
+- [Step 4: Specify Important Import Settings](#step-4-specify-important-import-settings)
 
- Step 1: Understanding the Import Data
-
- Step 2: Set Up the Import
-
- Step 3: Fill In Data to Update
-
- Step 4: Specify Key Import Settings
- 
-
-## Update WordPress Data – How It Works
+## How Updating WordPress Data Works
 
 WP All Import can import data to posts that already exist on your site, even if they were manually created instead of imported by our plugin.
 
@@ -33,7 +28,7 @@ This example will demonstrate how to update multiple property listings with new 
 
 As shown in the screenshots, we have a few property listings with outdated prices.
 
-<img src="1-Listings.webp" alt="Listings with outdated prices" width="300">
+<img src="1-Listings.webp" alt="Listings with outdated prices" width="700">
 
 I have a CSV file with the MLS numbers of the properties and the new prices.
 
@@ -45,15 +40,15 @@ I’ve entered the MLS number of each property in my theme. This means we can us
 
 ## Step 2: Set Up the Import
 
-To create the import, navigate to All Import › New Import, upload your CSV file, and select Property Listings as the post type.
+To create the import, navigate to **All Import › New Import**, upload your CSV file, and select **Property Listings** as the post type.
 
 <img src="4-upload-file.png" alt="New Import screen with CSV uploaded and Property Listings selected" width="700">
 
-Click Set Up Import to continue.
+Click **Set Up Import** to continue.
 
 ## Step 3: Fill In Data to Update in the Import Template
 
-In the Drag & Drop section, set the price custom field to the price from your file.
+In the **Drag & Drop** section, set the price custom field to the price from your file.
 
 ![Drag & Drop template with price custom field mapped](5-customfield.webp)
 
@@ -61,7 +56,7 @@ The only field we want to import data to is the price, so leave all the other fi
 
 WP All Import will warn you that your post title and content are blank, but that’s fine — you can continue anyway.
 
-Click Continue to Import Settings at the bottom.
+Click **Continue to Import Settings** at the bottom.
 
 ## Step 4: Specify Important Import Settings
 
@@ -71,19 +66,19 @@ We’re going to match by the MLS number since we have the MLS number both on ou
 
 ### Define How to Match with Existing Data
 
-In Import Settings, select “Attempt to match to existing WordPress posts before creating new ones.”
+In **Import Settings**, select “**Attempt to match to existing WordPress posts before creating new ones.**”
 
-Choose to match based on Custom field and click the Name box. Then enter mls_value, which is the custom field used to store the MLS number for each property.
+Choose to match based on **Custom field** and click the **Name** box. Then enter **mls_value**, which is the custom field used to store the MLS number for each property.
 
 <img src="6-match.png" alt="Import Settings matching by custom field mls_value" width="700">
 
-Next, drag & drop the MLS column from your CSV file to the Value textbox.
+Next, drag & drop the **MLS** column from your CSV file to the **Value** textbox.
 
 <img src="7-match-2.png" alt="MLS column dragged into Value textbox" width="700">
 
 For each record in your file, our plugin will look for a property on your site with an mls_value custom field that equals the same as {mlsno[1]} from your file, and then import the price to it.
 
-If you have multiple records or properties with this same value, only the first found record will be matched and updated. To match multiple properties that have the exact same mls_value custom field and value, custom code would have to be used along with our API.
+If you have multiple records or properties with this same value, only the first found record will be matched and updated. To match multiple properties that have the exact same mls_value custom field and value, [custom code](https://www.wpallimport.com/documentation/inline-php/) would have to be used along with our [API](https://www.wpallimport.com/documentation/inline-php/).
 
 ### Tell WP All Import Exactly Which Fields to Update
 
@@ -91,16 +86,16 @@ To ensure our plugin only imports the price and doesn’t overwrite the title, c
 
 For this example, we are updating only the price_value custom field:
 
-<img src="8-choose-data.png" alt="Choose which data to update, with price_value selected" width="700">
+<img src="8-choose-data.png" alt="Choose which data to update, with price_value selected" width="400">
 
 If the custom field to update doesn’t appear in the dropdown list, you can type it in and hit Return/Enter to add it.
 
 This step is very important. If you choose to update all data without having data mapped, you risk erasing existing data from your posts. You should only continue after having defined exactly which fields to update.
 
-Once everything is set up, click Continue and then Confirm & Run Import.
+Once everything is set up, click **Continue** and then **Confirm & Run Import**.
 
 After running the import, here’s the result: our three posts were updated with the new prices.
 
-<img src="9-final.webp" alt="Final result with updated prices" width="300">
+<img src="9-final.webp" alt="Final result with updated prices" width="600">
 
-That’s how you use Manual Record Matching.
+That’s how you use **Manual Record Matching**.

@@ -11,11 +11,6 @@ Provide your import file, choose the required post type, then configure WP All I
 - [Step 2: Set Up the Import](#step-2-set-up-the-import)
 - [Step 3: Fill In Data to Update in the Import Template](#step-3-fill-in-data-to-update-in-the-import-template)
 - [Step 4: Specify Important Import Settings](#step-4-specify-important-import-settings)
-- [Advanced Topics](#advanced-topics)
-- [Updating Variable Products](#updating-variable-products)
-- [Updating Custom Database Tables](#updating-custom-database-tables)
-
----
 
 ## How Updating WordPress Data Works
 
@@ -27,7 +22,6 @@ When importing into existing records, you can specify which data WP All Import w
 
 Follow along with the example below to get a complete understanding of how to import data into existing posts.
 
----
 
 ## Step 1: Understanding the Import Data
 
@@ -42,7 +36,6 @@ You also have a CSV file with:
 
 The MLS number of each property has been entered in your theme. This means we can use the MLS number as the “matcher” so that WP All Import knows which price should be assigned to which property.
 
----
 
 ## Step 2: Set Up the Import
 
@@ -54,7 +47,6 @@ To create the import:
 
 Click **Set Up Import** to continue.
 
----
 
 ## Step 3: Fill In Data to Update in the Import Template
 
@@ -67,7 +59,6 @@ WP All Import will warn you that your post title and content are blank, but that
 
 Click **Continue to Import Settings** at the bottom.
 
----
 
 ## Step 4: Specify Important Import Settings
 
@@ -109,14 +100,3 @@ After running the import, your posts will be updated with the new prices.
 
 That’s how you use **Manual Record Matching**.
 
----
-
-## Advanced Topics
-
-### Updating Variable Products
-
-_This same approach can be extended to WooCommerce variable products, where you match variations using a unique identifier (such as SKU or another custom field) and update only specific price or stock fields._
-
-### Updating Custom Database Tables
-
-_When working with custom database tables, updating data usually requires custom PHP code and use of our API. WP All Import can handle the import process, while hooks and custom functions handle writing to your custom tables._

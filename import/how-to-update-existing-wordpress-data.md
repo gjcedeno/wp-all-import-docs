@@ -70,7 +70,7 @@ We’re going to match by the **MLS number**, since we have the MLS number both 
 
 In **Import Settings**, select:
 
-> **Attempt to match to existing WordPress posts before creating new ones.**
+**Attempt to match to existing WordPress posts before creating new ones.**
 
 Then:
 
@@ -80,8 +80,8 @@ Then:
 
 For each record in your file, the plugin will look for a property on your site with an `mls_value` custom field that equals the same as `{mlsno[1]}` from your file, and then import the price to it.
 
-> If you have multiple records or properties with this same value, only the first found record will be matched and updated.  
-> To match multiple properties that share the exact same `mls_value`, custom code must be used along with our API.
+If you have multiple records or properties with this same value, only the first found record will be matched and updated.  
+To match multiple properties that share the exact same `mls_value`, custom code must be used along with our API.
 
 ### Tell WP All Import Exactly Which Fields to Update
 
@@ -92,7 +92,7 @@ To ensure the plugin only imports the price and doesn’t overwrite the title, c
 
 If the custom field to update doesn’t appear in the dropdown list, you can type it in manually and press **Return/Enter** to add it.
 
-> This step is very important. If you choose to update all data without having data mapped, you risk erasing existing data from your posts. Only continue after defining exactly which fields to update.
+This step is very important. If you choose to update all data without having data mapped, you risk erasing existing data from your posts. Only continue after defining exactly which fields to update.
 
 Once everything is set up, click **Continue** and then **Confirm & Run Import**.
 

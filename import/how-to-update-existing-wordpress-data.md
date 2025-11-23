@@ -15,7 +15,7 @@ How Updating WordPress Data Works
  Step 3: Fill In Data to Update
 
  Step 4: Specify Key Import Settings
-
+ 
 
 ## Update WordPress Data – How It Works
 
@@ -33,7 +33,7 @@ This example will demonstrate how to update multiple property listings with new 
 
 As shown in the screenshots, we have a few property listings with outdated prices.
 
-![Listings with outdated prices](1-Listings.webp)
+<img src="1-Listings.webp" alt="Listings with outdated prices" width="700">
 
 I have a CSV file with the MLS numbers of the properties and the new prices.
 
@@ -47,7 +47,7 @@ I’ve entered the MLS number of each property in my theme. This means we can us
 
 To create the import, navigate to All Import › New Import, upload your CSV file, and select Property Listings as the post type.
 
-![New Import screen with CSV uploaded and Property Listings selected](4-upload-file.png)
+<img src="4-upload-file.png" alt="New Import screen with CSV uploaded and Property Listings selected" width="700">
 
 Click Set Up Import to continue.
 
@@ -75,11 +75,11 @@ In Import Settings, select “Attempt to match to existing WordPress posts befor
 
 Choose to match based on Custom field and click the Name box. Then enter mls_value, which is the custom field used to store the MLS number for each property.
 
-![Import Settings matching by custom field mls_value](6-match.png)
+<img src="6-match.png" alt="Import Settings matching by custom field mls_value" width="700">
 
 Next, drag & drop the MLS column from your CSV file to the Value textbox.
 
-![MLS column dragged into Value textbox](7-match-2.png)
+<img src="7-match-2.png" alt="MLS column dragged into Value textbox" width="700">
 
 For each record in your file, our plugin will look for a property on your site with an mls_value custom field that equals the same as {mlsno[1]} from your file, and then import the price to it.
 
@@ -91,7 +91,7 @@ To ensure our plugin only imports the price and doesn’t overwrite the title, c
 
 For this example, we are updating only the price_value custom field:
 
-![Choose which data to update, with price_value selected](8-choose-data.png)
+<img src="8-choose-data.png" alt="Choose which data to update, with price_value selected" width="400">
 
 If the custom field to update doesn’t appear in the dropdown list, you can type it in and hit Return/Enter to add it.
 
@@ -101,6 +101,6 @@ Once everything is set up, click Continue and then Confirm & Run Import.
 
 After running the import, here’s the result: our three posts were updated with the new prices.
 
-![Final result with updated prices](9-final.webp)
+<img src="9-final.webp" alt="Final result with updated prices" width="600">
 
 That’s how you use Manual Record Matching.

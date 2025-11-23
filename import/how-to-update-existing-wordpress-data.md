@@ -33,7 +33,7 @@ This example will demonstrate how to update multiple property listings with new 
 
 As shown in the screenshots, we have a few property listings with outdated prices.
 
-<img src="1-Listings.webp" alt="Listings with outdated prices" width="700">
+<img src="1-Listings.webp" alt="Listings with outdated prices" width="300">
 
 I have a CSV file with the MLS numbers of the properties and the new prices.
 
@@ -91,7 +91,7 @@ To ensure our plugin only imports the price and doesn’t overwrite the title, c
 
 For this example, we are updating only the price_value custom field:
 
-<img src="8-choose-data.png" alt="Choose which data to update, with price_value selected" width="400">
+<img src="8-choose-data.png" alt="Choose which data to update, with price_value selected" width="700">
 
 If the custom field to update doesn’t appear in the dropdown list, you can type it in and hit Return/Enter to add it.
 
@@ -101,6 +101,6 @@ Once everything is set up, click Continue and then Confirm & Run Import.
 
 After running the import, here’s the result: our three posts were updated with the new prices.
 
-<img src="9-final.webp" alt="Final result with updated prices" width="600">
+<img src="9-final.webp" alt="Final result with updated prices" width="300">
 
 That’s how you use Manual Record Matching.
